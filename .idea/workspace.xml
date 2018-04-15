@@ -4,67 +4,6 @@
     <list default="true" id="82e26075-7305-4bac-88e2-e7dab02e8b8e" name="Default" comment="Changed all classes decompiled by Procyon back to source code">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Crystals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Crystals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/Glimmerscale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/Glimmerscale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleBoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleBoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleGlove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleGlove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleHelmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleHelmet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleHose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleHose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleSleeve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleSleeve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleVest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleVest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralBoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralBoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralCap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralCap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralGlove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralGlove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralHide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralHide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralHose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralHose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralJacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralJacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralSleeve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralSleeve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/example.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/AffinityOrb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/AffinityOrb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ArrowPackHunting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ArrowPackHunting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ArrowPackWar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ArrowPackWar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ChaosCrystal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ChaosCrystal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/CoinDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/CoinDecoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/CorpseDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/CorpseDecoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/DepthDrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/DepthDrill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/DisintegrationRod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/DisintegrationRod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/EnchantOrb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/EnchantOrb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/EnchantersCrystal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/EnchantersCrystal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/FriyanTablet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/FriyanTablet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/HugeCrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/HugeCrate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/MassStorageBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/MassStorageBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/MassStorageUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/MassStorageUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SkeletonDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SkeletonDecoration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/Soul.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/AffinityOrbAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/AffinityOrbAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ArrowPackUnpackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ArrowPackUnpackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ChaosCrystalInfuseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ChaosCrystalInfuseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/CrystalCombineAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/CrystalCombineAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DepthDrillAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DepthDrillAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DisintegrationRodAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DisintegrationRodAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantersCrystalInfuseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantersCrystalInfuseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/HolyBookPray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/HolyBookPrayAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/SoulstealAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/UnequipAllAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/UnequipAllAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/ClassMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/ClassMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/TweakApiPerms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/TweakApiPerms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Club.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Eviscerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Eviscerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Knuckles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Knuckles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Warhammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Warhammer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/heads/WarhammerHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/heads/WarhammerHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/MaartensMight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/MaartensMight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/RaffehsRage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/RaffehsRage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/VindictivesVengeance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/VindictivesVengeance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/WilhelmsWrath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/WilhelmsWrath.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -255,6 +194,14 @@
       <option name="presentableId" value="Default" />
       <updated>1523820365512</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed all classes decompiled by Procyon back to source code">
+      <created>1523825463788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523825463788</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
