@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.30
-// 
-
 package org.requiem.mods.requiemitemsold.items.actions;
 
 import com.wurmonline.server.Items;
@@ -24,95 +20,108 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AffinityOrbAction implements ModAction
-{
-    private static Logger logger;
-    private final short actionId;
-    private final ActionEntry actionEntry;
-    
-    public AffinityOrbAction() {
-        AffinityOrbAction.logger.log(Level.WARNING, "AffinityOrbAction()");
-        this.actionId = (short)ModActions.getNextActionId();
-        ModActions.registerAction(this.actionEntry = ActionEntry.createEntry(this.actionId, "Gain affinity", "infusing", new int[] { 6 }));
-    }
-    
-    public BehaviourProvider getBehaviourProvider() {
-        return new BehaviourProvider() {
-            public List<ActionEntry> getBehavioursFor(final Creature performer, final Item source, final Item object) {
-                return this.getBehavioursFor(performer, object);
-            }
-            
-            public List<ActionEntry> getBehavioursFor(final Creature performer, final Item object) {
-                if (performer instanceof Player && object != null && object.getTemplateId() == AffinityOrb.templateId) {
-                    return Arrays.asList(AffinityOrbAction.this.actionEntry);
-                }
-                return null;
-            }
-        };
-    }
-    
-    public ActionPerformer getActionPerformer() {
-        return new ActionPerformer() {
-            public short getActionId() {
-                return AffinityOrbAction.this.actionId;
-            }
-            
-            public boolean action(final Action act, final Creature performer, final Item target, final short action, final float counter) {
-                if (performer instanceof Player) {
-                    final Player player = (Player)performer;
-                    if (target.getTemplate().getTemplateId() != AffinityOrb.templateId) {
-                        player.getCommunicator().sendSafeServerMessage("You must use an Affinity Orb to be infused.");
-                        return true;
-                    }
-                    int skillNum = SkillSystem.getRandomSkillNum();
-                    final Affinity[] affs = Affinities.getAffinities(player.getWurmId());
-                    boolean found = false;
-                    while (!found) {
-                        boolean hasAffinity = false;
-                        final Affinity[] array = affs;
-                        final int length = array.length;
-                        int i = 0;
-                        while (i < length) {
-                            final Affinity affinity = array[i];
-                            if (affinity.getSkillNumber() != skillNum) {
-                                ++i;
-                            }
-                            else {
-                                hasAffinity = true;
-                                if (affinity.getNumber() >= 5) {
-                                    break;
-                                }
-                                Affinities.setAffinity(player.getWurmId(), skillNum, affinity.getNumber() + 1, false);
-                                final String skillString = SkillSystem.getNameFor(skillNum);
-                                found = true;
-                                Items.destroyItem(target.getWurmId());
-                                player.getCommunicator().sendSafeServerMessage("Vynora infuses you with an affinity for " + skillString + "!");
-                                break;
-                            }
-                        }
-                        if (!found && !hasAffinity) {
-                            final String skillString2 = SkillSystem.getNameFor(skillNum);
-                            Affinities.setAffinity(player.getWurmId(), skillNum, 1, false);
-                            Items.destroyItem(target.getWurmId());
-                            player.getCommunicator().sendSafeServerMessage("Vynora infuses you with an affinity for " + skillString2 + "!");
-                            found = true;
-                        }
-                        skillNum = SkillSystem.getRandomSkillNum();
-                    }
-                }
-                else {
-                    AffinityOrbAction.logger.info("Somehow a non-player activated an Affinity Orb...");
-                }
-                return true;
-            }
-            
-            public boolean action(final Action act, final Creature performer, final Item source, final Item target, final short action, final float counter) {
-                return this.action(act, performer, target, action, counter);
-            }
-        };
-    }
-    
-    static {
-        AffinityOrbAction.logger = Logger.getLogger(AffinityOrbAction.class.getName());
-    }
+public class AffinityOrbAction implements ModAction {
+	private static Logger logger = Logger.getLogger(AffinityOrbAction.class.getName());
+
+	private final short actionId;
+	private final ActionEntry actionEntry;
+
+	public AffinityOrbAction() {
+		logger.log(Level.WARNING, "AffinityOrbAction()");
+
+		actionId = (short) ModActions.getNextActionId();
+		actionEntry = ActionEntry.createEntry(
+			actionId,
+			"Gain affinity",
+			"infusing",
+			new int[] { 6 /* ACTION_TYPE_NOMOVE */ }	// 6 /* ACTION_TYPE_NOMOVE */, 48 /* ACTION_TYPE_ENEMY_ALWAYS */, 36 /* ACTION_TYPE_ALWAYS_USE_ACTIVE_ITEM */
+		);
+		ModActions.registerAction(actionEntry);
+	}
+
+
+	@Override
+	public BehaviourProvider getBehaviourProvider()
+	{
+		return new BehaviourProvider() {
+			// Menu with activated object
+			@Override
+			public List<ActionEntry> getBehavioursFor(Creature performer, Item source, Item object)
+			{
+				return this.getBehavioursFor(performer, object);
+			}
+
+			// Menu without activated object
+			@Override
+			public List<ActionEntry> getBehavioursFor(Creature performer, Item object)
+			{
+				if(performer instanceof Player && object != null && object.getTemplateId() == AffinityOrb.templateId) {
+					return Arrays.asList(actionEntry);
+				}
+				
+				return null;
+			}
+		};
+	}
+
+	@Override
+	public ActionPerformer getActionPerformer()
+	{
+		return new ActionPerformer() {
+			
+			@Override
+			public short getActionId() {
+				return actionId;
+			}
+			
+			// Without activated object
+			@Override
+			public boolean action(Action act, Creature performer, Item target, short action, float counter)
+			{
+				if(performer instanceof Player){
+					Player player = (Player) performer;
+					if (target.getTemplate().getTemplateId() != AffinityOrb.templateId){
+	                    player.getCommunicator().sendSafeServerMessage("You must use an Affinity Orb to be infused.");
+	                    return true;
+					}
+					int skillNum = SkillSystem.getRandomSkillNum();
+		            Affinity[] affs = Affinities.getAffinities(player.getWurmId());
+		            boolean found = false;
+		            while (!found) {
+		                boolean hasAffinity = false;
+		                for (Affinity affinity : affs) {
+		                    if (affinity.getSkillNumber() != skillNum) continue;
+		                    hasAffinity = true;
+		                    if (affinity.getNumber() >= 5) break;
+		                    Affinities.setAffinity(player.getWurmId(), skillNum, affinity.getNumber() + 1, false);
+		                    String skillString = SkillSystem.getNameFor(skillNum);
+		                    found = true;
+		                    Items.destroyItem(target.getWurmId());
+		                    player.getCommunicator().sendSafeServerMessage("Vynora infuses you with an affinity for " + skillString + "!");
+		                    break;
+		                }
+		                if (!found && !hasAffinity) {
+		                	String skillString = SkillSystem.getNameFor(skillNum);
+		                    Affinities.setAffinity(player.getWurmId(), skillNum, 1, false);
+		                    Items.destroyItem(target.getWurmId());
+		                    player.getCommunicator().sendSafeServerMessage("Vynora infuses you with an affinity for " + skillString + "!");
+		                    found = true;
+		                }
+		                skillNum = SkillSystem.getRandomSkillNum();
+		            }
+				}else{
+					logger.info("Somehow a non-player activated an Affinity Orb...");
+				}
+				return true;
+			}
+			
+			@Override
+			public boolean action(Action act, Creature performer, Item source, Item target, short action, float counter)
+			{
+				return this.action(act, performer, target, action, counter);
+			}
+			
+	
+		}; // ActionPerformer
+	}
 }

@@ -6,7 +6,7 @@ import com.wurmonline.server.items.*;
 import com.wurmonline.server.skills.SkillList;
 import org.gotti.wurmunlimited.modsupport.actions.ModActions;
 import org.requiem.mods.requiemitemsold.configurator.Constants;
-import org.requiem.mods.requiemitemsold.items.actions.HolyBookPray;
+import org.requiem.mods.requiemitemsold.items.actions.HolyBookPrayAction;
 import org.requiem.mods.requiemitemsold.items.actions.TownScrollAction;
 
 import java.util.logging.Level;
@@ -44,7 +44,7 @@ public class SpecialItems {
                     10000,
                     true
             );
-            ModActions.registerAction(new HolyBookPray());
+            ModActions.registerAction(new HolyBookPrayAction());
         }
         catch (Throwable e) {
             SpecialItems.logger.log(Level.SEVERE, "Uncaught Exception in onServerStarted", e);

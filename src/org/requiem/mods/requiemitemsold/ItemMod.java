@@ -51,7 +51,6 @@ public class ItemMod {
 	public static Knuckles KNUCKLES = new Knuckles();
 	public static MassStorageUnit MASS_STORAGE_UNIT = new MassStorageUnit();
 	public static SkeletonDecoration SKELETON_DECORATION = new SkeletonDecoration();
-	public static Soul SOUL = new Soul();
 	public static Warhammer WARHAMMER = new Warhammer();
 	public static WarhammerHead WARHAMMER_HEAD = new WarhammerHead();
 	
@@ -101,7 +100,6 @@ public class ItemMod {
 			KNUCKLES.createTemplate();
 			MASS_STORAGE_UNIT.createTemplate();
 			SKELETON_DECORATION.createTemplate();
-			SOUL.createTemplate();
 			WARHAMMER.createTemplate();
 			WARHAMMER_HEAD.createTemplate();
 			

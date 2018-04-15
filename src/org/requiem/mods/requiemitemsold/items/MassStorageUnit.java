@@ -1,64 +1,79 @@
-// 
-// Decompiled by Procyon v0.5.30
-// 
-
 package org.requiem.mods.requiemitemsold.items;
 
 import com.wurmonline.server.MiscConstants;
 import com.wurmonline.server.items.*;
+import com.wurmonline.server.skills.SkillList;
 import org.gotti.wurmunlimited.modsupport.ItemTemplateBuilder;
 import org.gotti.wurmunlimited.modsupport.vehicles.ModVehicleBehaviours;
 
 import java.io.IOException;
 import java.util.logging.Logger;
 
-public class MassStorageUnit implements ItemTypes
-{
-    private static Logger logger;
-    public static int templateId;
-    private String name;
-    
-    public MassStorageUnit() {
-        this.name = "mass storage unit";
-    }
-    
-    public void createTemplate() throws IOException {
-        ModVehicleBehaviours.init();
-        final ItemTemplateBuilder builder = new ItemTemplateBuilder("mod.item.mass.storage");
-        builder.name(this.name, "mass storage units", "A massive storage unit able to be loaded with containers.");
+public class MassStorageUnit implements ItemTypes {
+	private static Logger logger = Logger.getLogger(MassStorageUnit.class.getName());
+	public static int templateId;
+	private String name = "mass storage unit";
+
+    public void createTemplate() throws IOException{
+    	ModVehicleBehaviours.init();
+        ItemTemplateBuilder builder = new ItemTemplateBuilder("mod.item.mass.storage");
+        builder.name(name, "mass storage units", "A massive storage unit able to be loaded with containers.");
         builder.descriptions("almost full", "somewhat occupied", "half-full", "emptyish");
-        builder.itemTypes(new short[] { 21, 31, 44, 51, 52, 86, 109, 47, 1, 117, 119, 135, 180, 194, 193, 195 });
-        builder.imageNumber((short)60);
-        builder.behaviourType((short)41);
+        builder.itemTypes(new short[] { 
+				ITEM_TYPE_WOOD,
+				ITEM_TYPE_NOTAKE,
+				ITEM_TYPE_REPAIRABLE,
+				ITEM_TYPE_TURNABLE,
+				ITEM_TYPE_DECORATION,
+				ITEM_TYPE_DESTROYABLE,
+				ITEM_TYPE_ONE_PER_TILE,
+				ITEM_TYPE_LOCKABLE,
+				ITEM_TYPE_HOLLOW,
+				ITEM_TYPE_VEHICLE,
+				ITEM_TYPE_IMPROVEITEM,
+				ITEM_TYPE_OWNER_DESTROYABLE,
+				ItemTypes.ITEM_TYPE_USES_SPECIFIED_CONTAINER_VOLUME,
+				ITEM_TYPE_OWNER_TURNABLE,
+				ITEM_TYPE_CART,
+				ITEM_TYPE_OWNER_MOVEABLE
+		});
+		builder.imageNumber((short) 60);
+		builder.behaviourType((short) 41);
         builder.combatDamage(0);
         builder.decayTime(9072000L);
-        builder.dimensions(400, 300, 1000);
+		builder.dimensions(400, 300, 1000);
         builder.primarySkill(-10);
-        builder.bodySpaces(MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY);
+		builder.bodySpaces(MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY);
         builder.modelName("model.furniture.wooden.storageunit.");
-        builder.difficulty(80.0f);
+        //builder.size(3);
+
+        builder.difficulty(80.0F);
         builder.weightGrams(300000);
-        builder.material((byte)14);
-        final ItemTemplate template = builder.build();
-        MassStorageUnit.templateId = template.getTemplateId();
+        builder.material(Materials.MATERIAL_WOOD_BIRCH);
+        
+        ItemTemplate template = builder.build();
+		templateId = template.getTemplateId();
         template.setContainerSize(300, 300, 600);
-        final MassStorageBehaviour massStorageBehaviour = new MassStorageBehaviour();
-        ModVehicleBehaviours.addItemVehicle(MassStorageUnit.templateId, massStorageBehaviour);
-        MassStorageUnit.logger.info(this.name + " TemplateID: " + MassStorageUnit.templateId);
+        
+        MassStorageBehaviour massStorageBehaviour = new MassStorageBehaviour();
+        ModVehicleBehaviours.addItemVehicle(templateId, massStorageBehaviour);
+        //KingdomWagonBehaviour kingdomWagonBehaviour = new KingdomWagonBehaviour();
+        //ModVehicleBehaviours.addItemVehicle(resultTemplate.getTemplateId(), kingdomWagonBehaviour);
+
+		logger.info(name+" TemplateID: "+templateId);
     }
     
-    public void initCreationEntry() {
-        MassStorageUnit.logger.info("initCreationEntry()");
-        if (MassStorageUnit.templateId > 0) {
-            final AdvancedCreationEntry massStorage = CreationEntryCreator.createAdvancedEntry(10044, 860, 860, MassStorageUnit.templateId, false, false, 0.0f, true, true, 0, 70.0, CreationCategories.STORAGE);
-            massStorage.addRequirement(new CreationRequirement(1, 22, 500, true));
-            massStorage.addRequirement(new CreationRequirement(2, 23, 200, true));
-            massStorage.addRequirement(new CreationRequirement(3, 188, 50, true));
-            massStorage.addRequirement(new CreationRequirement(4, 217, 100, true));
-        }
-    }
-    
-    static {
-        MassStorageUnit.logger = Logger.getLogger(MassStorageUnit.class.getName());
+    public void initCreationEntry(){
+		logger.info("initCreationEntry()");
+		if(templateId > 0){
+	        AdvancedCreationEntry massStorage = CreationEntryCreator.createAdvancedEntry(SkillList.CARPENTRY_FINE,
+	        		ItemList.woodBeam, ItemList.woodBeam, templateId,
+	                false, false, 0.0F, true, true, 0, 70.0D, CreationCategories.STORAGE);
+	
+	        massStorage.addRequirement(new CreationRequirement(1, ItemList.plank, 500, true));
+	        massStorage.addRequirement(new CreationRequirement(2, ItemList.shaft, 200, true));
+	        massStorage.addRequirement(new CreationRequirement(3, ItemList.ironBand, 50, true));
+	        massStorage.addRequirement(new CreationRequirement(4, ItemList.nailsIronLarge, 100, true));
+		}
     }
 }

@@ -26,14 +26,14 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class HolyBookPray implements ModAction, BehaviourProvider, ActionPerformer
+public class HolyBookPrayAction implements ModAction, BehaviourProvider, ActionPerformer
 {
     private static final Logger logger;
     private final short actionId;
     private final Method prayResult;
     private final ActionEntry actionEntry;
     
-    public HolyBookPray() {
+    public HolyBookPrayAction() {
         this.actionId = (short)ModActions.getNextActionId();
         this.prayResult = TweakApiPerms.getClassMeth("com.wurmonline.server.behaviours.MethodsReligion", "prayResult", "com.wurmonline.server.creatures.Creature", "float", "com.wurmonline.server.deities.Deity", "int");
         final int[] types = { 4, 25, 43 };
@@ -107,13 +107,13 @@ public class HolyBookPray implements ModAction, BehaviourProvider, ActionPerform
                     this.prayResult.invoke(null, performer, res, deity, rare);
                 }
                 catch (IllegalAccessException e2) {
-                    HolyBookPray.logger.log(Level.SEVERE, "IllegalAccess: prayResult");
+                    HolyBookPrayAction.logger.log(Level.SEVERE, "IllegalAccess: prayResult");
                 }
                 catch (InvocationTargetException e3) {
-                    HolyBookPray.logger.log(Level.SEVERE, "InvokeExc: prayResult");
+                    HolyBookPrayAction.logger.log(Level.SEVERE, "InvokeExc: prayResult");
                 }
                 catch (Throwable e) {
-                    HolyBookPray.logger.log(Level.SEVERE, "InvokeExc: prayResult ", e);
+                    HolyBookPrayAction.logger.log(Level.SEVERE, "InvokeExc: prayResult ", e);
                 }
             }
             deity.increaseFavor();
@@ -125,6 +125,6 @@ public class HolyBookPray implements ModAction, BehaviourProvider, ActionPerform
     }
     
     static {
-        logger = Logger.getLogger("HolyBookPray");
+        logger = Logger.getLogger("HolyBookPrayAction");
     }
 }

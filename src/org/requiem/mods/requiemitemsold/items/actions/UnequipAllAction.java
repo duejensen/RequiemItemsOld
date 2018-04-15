@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.30
-// 
-
 package org.requiem.mods.requiemitemsold.items.actions;
 
 import com.wurmonline.server.NoSuchItemException;
@@ -21,79 +17,100 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class UnequipAllAction implements ModAction
-{
-    private static Logger logger;
-    private final short actionId;
-    private final ActionEntry actionEntry;
-    
-    public UnequipAllAction() {
-        UnequipAllAction.logger.log(Level.WARNING, "UnequipAllAction()");
-        this.actionId = (short)ModActions.getNextActionId();
-        ModActions.registerAction(this.actionEntry = ActionEntry.createEntry(this.actionId, "Unequip all armour", "unequipping", new int[] { 6 }));
-    }
-    
-    public BehaviourProvider getBehaviourProvider() {
-        return new BehaviourProvider() {
-            public List<ActionEntry> getBehavioursFor(final Creature performer, final Item source, final Item object) {
-                return this.getBehavioursFor(performer, object);
-            }
-            
-            public List<ActionEntry> getBehavioursFor(final Creature performer, final Item object) {
-                try {
-                    if (performer instanceof Player && object != null && object.getParentOrNull() != null && object.getParent().isBodyPart() && object.getParent().getOwnerId() == performer.getWurmId()) {
-                        return Arrays.asList(UnequipAllAction.this.actionEntry);
-                    }
-                }
-                catch (NoSuchItemException e) {
-                    e.printStackTrace();
-                }
-                return null;
-            }
-        };
-    }
-    
-    public ActionPerformer getActionPerformer() {
-        return new ActionPerformer() {
-            public short getActionId() {
-                return UnequipAllAction.this.actionId;
-            }
-            
-            public boolean action(final Action act, final Creature performer, final Item target, final short action, final float counter) {
-                if (performer instanceof Player) {
-                    try {
-                        final Player player = (Player)performer;
-                        if (target.getParent() == null) {
-                            player.getCommunicator().sendSafeServerMessage("You cannot unequip an item that isn't equipped.");
-                            return true;
-                        }
-                        if (target.getParent().getOwnerId() != player.getWurmId()) {
-                            player.getCommunicator().sendSafeServerMessage("You cannot unequip an item that you do not own.");
-                            return true;
-                        }
-                        for (final Item equip : player.getBody().getAllItems()) {
-                            if (equip.isArmour()) {
-                                AutoEquipMethods.unequip(equip, player);
-                            }
-                        }
-                    }
-                    catch (NoSuchItemException e1) {
-                        e1.printStackTrace();
-                    }
-                }
-                else {
-                    UnequipAllAction.logger.info("Somehow a non-player activated an Affinity Orb...");
-                }
-                return true;
-            }
-            
-            public boolean action(final Action act, final Creature performer, final Item source, final Item target, final short action, final float counter) {
-                return this.action(act, performer, target, action, counter);
-            }
-        };
-    }
-    
-    static {
-        UnequipAllAction.logger = Logger.getLogger(UnequipAllAction.class.getName());
-    }
+public class UnequipAllAction implements ModAction {
+	private static Logger logger = Logger.getLogger(UnequipAllAction.class.getName());
+
+	private final short actionId;
+	private final ActionEntry actionEntry;
+
+	public UnequipAllAction() {
+		logger.log(Level.WARNING, "UnequipAllAction()");
+
+		actionId = (short) ModActions.getNextActionId();
+		actionEntry = ActionEntry.createEntry(
+			actionId,
+			"Unequip all armour",
+			"unequipping",
+			new int[] { 6 /* ACTION_TYPE_NOMOVE */ }	// 6 /* ACTION_TYPE_NOMOVE */, 48 /* ACTION_TYPE_ENEMY_ALWAYS */, 36 /* ACTION_TYPE_ALWAYS_USE_ACTIVE_ITEM */
+		);
+		ModActions.registerAction(actionEntry);
+	}
+
+
+	@Override
+	public BehaviourProvider getBehaviourProvider()
+	{
+		return new BehaviourProvider() {
+			// Menu with activated object
+			@Override
+			public List<ActionEntry> getBehavioursFor(Creature performer, Item source, Item object)
+			{
+				return this.getBehavioursFor(performer, object);
+			}
+
+			// Menu without activated object
+			@Override
+			public List<ActionEntry> getBehavioursFor(Creature performer, Item object)
+			{
+				try {
+					if(performer instanceof Player && object != null && object.getParentOrNull() != null && object.getParent().isBodyPart() && object.getParent().getOwnerId() == performer.getWurmId()) {
+						return Arrays.asList(actionEntry);
+					}
+				} catch (NoSuchItemException e) {
+					e.printStackTrace();
+				}
+				
+				return null;
+			}
+		};
+	}
+
+	@Override
+	public ActionPerformer getActionPerformer()
+	{
+		return new ActionPerformer() {
+			
+			@Override
+			public short getActionId() {
+				return actionId;
+			}
+			
+			// Without activated object
+			@Override
+			public boolean action(Action act, Creature performer, Item target, short action, float counter)
+			{
+				if(performer instanceof Player){
+					try {
+						Player player = (Player) performer;
+						if (target.getParent() == null){
+						    player.getCommunicator().sendSafeServerMessage("You cannot unequip an item that isn't equipped.");
+						    return true;
+						}
+						if (target.getParent().getOwnerId() != player.getWurmId()){
+						    player.getCommunicator().sendSafeServerMessage("You cannot unequip an item that you do not own.");
+						    return true;
+						}
+						for(Item equip : player.getBody().getAllItems()){
+							if(equip.isArmour()){
+								AutoEquipMethods.unequip(equip, player);
+							}
+						}
+					} catch (NoSuchItemException e1) {
+						e1.printStackTrace();
+					}
+				}else{
+					logger.info("Somehow a non-player activated an Affinity Orb...");
+				}
+				return true;
+			}
+			
+			@Override
+			public boolean action(Action act, Creature performer, Item source, Item target, short action, float counter)
+			{
+				return this.action(act, performer, target, action, counter);
+			}
+			
+	
+		}; // ActionPerformer
+	}
 }

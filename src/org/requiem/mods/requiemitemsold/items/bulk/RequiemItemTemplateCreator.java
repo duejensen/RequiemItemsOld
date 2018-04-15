@@ -1,6 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.30
-// 
 
 package org.requiem.mods.requiemitemsold.items.bulk;
 

@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.30
-// 
-
 package org.requiem.mods.requiemitemsold.items.actions;
 
 import com.wurmonline.server.Items;
@@ -21,108 +17,129 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ReceiveMailAction implements ModAction
-{
-    private static Logger logger;
-    private final short actionId;
-    private final ActionEntry actionEntry;
-    
-    public ReceiveMailAction() {
-        ReceiveMailAction.logger.log(Level.WARNING, "ReceiveMailAction()");
-        this.actionId = (short)ModActions.getNextActionId();
-        ModActions.registerAction(this.actionEntry = ActionEntry.createEntry(this.actionId, "Receive all mail", "receiving", new int[] { 6 }));
-    }
-    
-    public BehaviourProvider getBehaviourProvider() {
-        return new BehaviourProvider() {
-            public List<ActionEntry> getBehavioursFor(final Creature performer, final Item source, final Item object) {
-                return this.getBehavioursFor(performer, object);
-            }
-            
-            public List<ActionEntry> getBehavioursFor(final Creature performer, final Item object) {
-                if (performer instanceof Player && object != null && object.isMailBox() && object.getSpellCourierBonus() > 0.0f) {
-                    return Arrays.asList(ReceiveMailAction.this.actionEntry);
-                }
-                return null;
-            }
-        };
-    }
-    
-    public ActionPerformer getActionPerformer() {
-        return new ActionPerformer() {
-            public short getActionId() {
-                return ReceiveMailAction.this.actionId;
-            }
-            
-            public boolean action(final Action act, final Creature performer, final Item target, final short action, final float counter) {
-                if (performer instanceof Player) {
-                    final Player player = (Player)performer;
-                    if (!target.isMailBox()) {
-                        player.getCommunicator().sendSafeServerMessage("You can only receive mail at a mailbox.");
-                        return true;
-                    }
-                    if (target.getSpellCourierBonus() <= 0.0f) {
-                        player.getCommunicator().sendSafeServerMessage("The mailbox must be enchanted before receiving mail.");
-                        return true;
-                    }
-                    if (!performer.isWithinDistanceTo(target.getPosX(), target.getPosY(), target.getPosZ(), 4.0f)) {
-                        player.getCommunicator().sendSafeServerMessage("You must be closer to collect mail.");
-                        return true;
-                    }
-                    if (!target.isEmpty(false)) {
-                        player.getCommunicator().sendSafeServerMessage("Empty the mailbox first.");
-                        return true;
-                    }
-                    final Set<WurmMail> mailset = WurmMail.getSentMailsFor(performer.getWurmId(), 100);
-                    if (mailset.isEmpty()) {
-                        player.getCommunicator().sendSafeServerMessage("You have no mail to collect.");
-                        return true;
-                    }
-                    final Iterator<WurmMail> it = mailset.iterator();
-                    final HashSet<Item> itemset = new HashSet<Item>();
-                    while (it.hasNext()) {
-                        final WurmMail m = it.next();
-                        if (!m.rejected) {
-                            if (m.price > 0L) {
-                                continue;
-                            }
-                            try {
-                                itemset.add(Items.getItem(m.itemId));
-                            }
-                            catch (NoSuchItemException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                    if (!itemset.isEmpty()) {
-                        player.getCommunicator().sendSafeServerMessage("The " + itemset.size() + " items that were sent via mail are now available.");
-                        for (final Item item : itemset) {
-                            final Item[] contained4 = item.getAllItems(true);
-                            for (int c4 = 0; c4 < contained4.length; ++c4) {
-                                contained4[c4].setMailed(false);
-                                contained4[c4].setLastOwnerId(performer.getWurmId());
-                            }
-                            WurmMail.removeMail(item.getWurmId());
-                            target.insertItem(item, true);
-                            item.setLastOwnerId(performer.getWurmId());
-                            item.setMailed(false);
-                            ReceiveMailAction.logger.log(Level.INFO, performer.getName() + " received " + item.getName() + " " + item.getWurmId());
-                        }
-                    }
-                }
-                else {
-                    ReceiveMailAction.logger.info("Somehow a non-player activated an Affinity Orb...");
-                }
-                return true;
-            }
-            
-            public boolean action(final Action act, final Creature performer, final Item source, final Item target, final short action, final float counter) {
-                return this.action(act, performer, target, action, counter);
-            }
-        };
-    }
-    
-    static {
-        ReceiveMailAction.logger = Logger.getLogger(ReceiveMailAction.class.getName());
-    }
+public class ReceiveMailAction implements ModAction {
+	private static Logger logger = Logger.getLogger(ReceiveMailAction.class.getName());
+
+	private final short actionId;
+	private final ActionEntry actionEntry;
+
+	public ReceiveMailAction() {
+		logger.log(Level.WARNING, "ReceiveMailAction()");
+
+		actionId = (short) ModActions.getNextActionId();
+		actionEntry = ActionEntry.createEntry(
+			actionId,
+			"Receive all mail",
+			"receiving",
+			new int[] { 6 /* ACTION_TYPE_NOMOVE */ }	// 6 /* ACTION_TYPE_NOMOVE */, 48 /* ACTION_TYPE_ENEMY_ALWAYS */, 36 /* ACTION_TYPE_ALWAYS_USE_ACTIVE_ITEM */
+		);
+		ModActions.registerAction(actionEntry);
+	}
+
+
+	@Override
+	public BehaviourProvider getBehaviourProvider()
+	{
+		return new BehaviourProvider() {
+			// Menu with activated object
+			@Override
+			public List<ActionEntry> getBehavioursFor(Creature performer, Item source, Item object)
+			{
+				return this.getBehavioursFor(performer, object);
+			}
+
+			// Menu without activated object
+			@Override
+			public List<ActionEntry> getBehavioursFor(Creature performer, Item object)
+			{
+				if(performer instanceof Player && object != null && object.isMailBox() && object.getSpellCourierBonus() > 0f) {
+					return Arrays.asList(actionEntry);
+				}
+				
+				return null;
+			}
+		};
+	}
+
+	@Override
+	public ActionPerformer getActionPerformer()
+	{
+		return new ActionPerformer() {
+			
+			@Override
+			public short getActionId() {
+				return actionId;
+			}
+			
+			// Without activated object
+			@Override
+			public boolean action(Action act, Creature performer, Item target, short action, float counter)
+			{
+				if(performer instanceof Player){
+					Player player = (Player) performer;
+					if (!target.isMailBox()){
+	                    player.getCommunicator().sendSafeServerMessage("You can only receive mail at a mailbox.");
+	                    return true;
+					}
+					if(target.getSpellCourierBonus() <= 0f){
+	                    player.getCommunicator().sendSafeServerMessage("The mailbox must be enchanted before receiving mail.");
+	                    return true;
+					}
+					if(!performer.isWithinDistanceTo(target.getPosX(), target.getPosY(), target.getPosZ(), 4.0f)){
+	                    player.getCommunicator().sendSafeServerMessage("You must be closer to collect mail.");
+	                    return true;
+					}
+					if(!target.isEmpty(false)){
+	                    player.getCommunicator().sendSafeServerMessage("Empty the mailbox first.");
+	                    return true;
+					}
+					Set<WurmMail> mailset = WurmMail.getSentMailsFor(performer.getWurmId(), 100);
+					if(mailset.isEmpty()){
+	                    player.getCommunicator().sendSafeServerMessage("You have no mail to collect.");
+	                    return true;
+					}
+					Iterator<WurmMail> it = mailset.iterator();
+					WurmMail m;
+					HashSet<Item> itemset = new HashSet<Item>();
+					while(it.hasNext()){
+						m = it.next();
+						if(m.rejected || m.price > 0){
+							continue;
+						}
+						try {
+							itemset.add(Items.getItem(m.itemId));
+						} catch (NoSuchItemException e) {
+							e.printStackTrace();
+						}
+					}
+					if(!itemset.isEmpty()){
+						player.getCommunicator().sendSafeServerMessage("The "+itemset.size()+" items that were sent via mail are now available.");
+						for (Item item : itemset) {
+	                        Item[] contained4 = item.getAllItems(true);
+	                        for (int c4 = 0; c4 < contained4.length; ++c4) {
+	                            contained4[c4].setMailed(false);
+	                            contained4[c4].setLastOwnerId(performer.getWurmId());
+	                        }
+	                        WurmMail.removeMail(item.getWurmId());
+	                        target.insertItem(item, true);
+	                        item.setLastOwnerId(performer.getWurmId());
+	                        item.setMailed(false);
+	                        logger.log(Level.INFO, performer.getName() + " received " + item.getName() + " " + item.getWurmId());
+	                    }
+					}
+				}else{
+					logger.info("Somehow a non-player activated an Affinity Orb...");
+				}
+				return true;
+			}
+			
+			@Override
+			public boolean action(Action act, Creature performer, Item source, Item target, short action, float counter)
+			{
+				return this.action(act, performer, target, action, counter);
+			}
+			
+	
+		}; // ActionPerformer
+	}
 }

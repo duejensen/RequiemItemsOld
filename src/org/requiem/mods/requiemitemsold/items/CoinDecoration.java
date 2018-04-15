@@ -1,60 +1,57 @@
-// 
-// Decompiled by Procyon v0.5.30
-// 
-
 package org.requiem.mods.requiemitemsold.items;
 
 import com.wurmonline.server.MiscConstants;
 import com.wurmonline.server.items.*;
+import com.wurmonline.server.skills.SkillList;
 import org.gotti.wurmunlimited.modsupport.ItemTemplateBuilder;
 
 import java.io.IOException;
 import java.util.logging.Logger;
 
-public class CoinDecoration implements ItemTypes, MiscConstants
-{
-    public static Logger logger;
-    public static int templateId;
-    private String name;
-    
-    public CoinDecoration() {
-        this.name = "coin pile";
-    }
-    
-    public void createTemplate() throws IOException {
-        final ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.coin.pile");
-        itemBuilder.name(this.name, "coin piles", "A pile of decorative coins.");
-        itemBuilder.itemTypes(new short[] { 108, 135, 86, 51, 52, 157, 44, 92 });
-        itemBuilder.imageNumber((short)572);
-        itemBuilder.behaviourType((short)1);
-        itemBuilder.combatDamage(0);
-        itemBuilder.decayTime(Long.MAX_VALUE);
-        itemBuilder.dimensions(5, 5, 5);
-        itemBuilder.primarySkill(1020);
-        itemBuilder.bodySpaces(CoinDecoration.EMPTY_BYTE_PRIMITIVE_ARRAY);
-        itemBuilder.modelName("model.pile.coin.");
-        itemBuilder.difficulty(70.0f);
-        itemBuilder.weightGrams(1000);
-        itemBuilder.material((byte)10);
-        itemBuilder.value(100);
-        final ItemTemplate template = itemBuilder.build();
-        CoinDecoration.templateId = template.getTemplateId();
-        CoinDecoration.logger.info(this.name + " TemplateID: " + CoinDecoration.templateId);
-    }
-    
-    public void initCreationEntry() {
-        CoinDecoration.logger.info("initCreationEntry()");
-        if (CoinDecoration.templateId > 0) {
-            CoinDecoration.logger.info("Creating " + this.name + " creation entry, ID = " + CoinDecoration.templateId);
-            final AdvancedCreationEntry entry = CreationEntryCreator.createAdvancedEntry(1020, 50, 50, CoinDecoration.templateId, false, false, 0.0f, true, false, CreationCategories.REQUIEM_DECORATIONS);
-            entry.addRequirement(new CreationRequirement(1, 50, 3, true));
-        }
-        else {
-            CoinDecoration.logger.info(this.name + " does not have a template ID on creation entry.");
-        }
-    }
-    
-    static {
-        CoinDecoration.logger = Logger.getLogger(CoinDecoration.class.getName());
-    }
+public class CoinDecoration implements ItemTypes, MiscConstants {
+	public static Logger logger = Logger.getLogger(CoinDecoration.class.getName());
+	public static int templateId;
+	private String name = "coin pile";
+	public void createTemplate() throws IOException{
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.coin.pile");
+		itemBuilder.name(name, "coin piles", "A pile of decorative coins.");
+		itemBuilder.itemTypes(new short[]{ // {108, 21, 135, 86, 31, 51, 52, 157, 44, 92, 176} - Table
+				ItemTypes.ITEM_TYPE_NAMED,
+				ItemTypes.ITEM_TYPE_OWNER_DESTROYABLE,
+				ItemTypes.ITEM_TYPE_DESTROYABLE,
+				ItemTypes.ITEM_TYPE_TURNABLE,
+				ItemTypes.ITEM_TYPE_DECORATION,
+				ItemTypes.ITEM_TYPE_NOT_MISSION,
+				ItemTypes.ITEM_TYPE_REPAIRABLE,
+				ItemTypes.ITEM_TYPE_COLORABLE
+		});
+		itemBuilder.imageNumber((short) 572);
+		itemBuilder.behaviourType((short) 1);
+		itemBuilder.combatDamage(0);
+		itemBuilder.decayTime(Long.MAX_VALUE);
+		itemBuilder.dimensions(5, 5, 5);
+		itemBuilder.primarySkill(SkillList.MISCELLANEOUS);
+		itemBuilder.bodySpaces(EMPTY_BYTE_PRIMITIVE_ARRAY);
+		itemBuilder.modelName("model.pile.coin.");
+		itemBuilder.difficulty(70.0f);
+		itemBuilder.weightGrams(1000);
+		itemBuilder.material(Materials.MATERIAL_COPPER);
+		itemBuilder.value(100);
+		
+		ItemTemplate template = itemBuilder.build();
+		templateId = template.getTemplateId();
+		logger.info(name+" TemplateID: "+templateId);
+	}
+	
+	public void initCreationEntry(){
+		logger.info("initCreationEntry()");
+		if(templateId > 0){
+			logger.info("Creating "+name+" creation entry, ID = "+templateId);
+			final AdvancedCreationEntry entry = CreationEntryCreator.createAdvancedEntry(SkillList.MISCELLANEOUS,
+					ItemList.coinCopper, ItemList.coinCopper, templateId, false, false, 0f, true, false, CreationCategories.DECORATION);
+			entry.addRequirement(new CreationRequirement(1, ItemList.coinCopper, 3, true));
+		}else{
+			logger.info(name+" does not have a template ID on creation entry.");
+		}
+	}
 }
