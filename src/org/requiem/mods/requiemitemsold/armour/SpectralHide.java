@@ -14,7 +14,7 @@
      public static int templateId;
      public void createTemplate() throws IOException{
          String name = "spectral hide";
-         ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("wyvern.spectral.hide");
+         ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.spectral.hide");
          itemBuilder.name(name, "spectral hides", "Lightweight and transparent, this ethereal leather comes from another plane of existance. It is stronger than natural drake hide.");
          itemBuilder.descriptions("excellent", "good", "ok", "poor");
          itemBuilder.itemTypes(new short[]{

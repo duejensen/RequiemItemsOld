@@ -22,7 +22,7 @@ public class RaffehsRage implements ItemTypes, MiscConstants {
 		 * 1339, 35, 80, Long.MAX_VALUE, 5, 10, 80, 10070, MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, 
 		 * "model.artifact.hammerhuge.", 99.0f, 7000, 31, 3000000, false);
 		 */
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.titan.raffeh.rage");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.titan.raffeh.rage");
 		itemBuilder.name(name, "Raffeh's Rages", "A melding of ice and fire from the champion of Kaen Ist, this maul is an elemental maelstrom.");
 		itemBuilder.itemTypes(new short[]{ // new short[]{108, 44, 147, 22, 37, 14, 189} - Large Maul
 				ItemTypes.ITEM_TYPE_NAMED,

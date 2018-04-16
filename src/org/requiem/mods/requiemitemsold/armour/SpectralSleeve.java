@@ -14,7 +14,7 @@ public class SpectralSleeve implements ItemTypes, MiscConstants {
 	public static int templateId;
 	private String name = "spectral sleeve";
 	public void createTemplate() throws IOException{
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.spectral.sleeve");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.spectral.sleeve");
 		itemBuilder.name(name, "spectral sleeves", "A spectral sleeve.");
 		itemBuilder.itemTypes(new short[]{ // {108, 44, 23, 4, 99} - Drake hide jacket
 				ItemTypes.ITEM_TYPE_NAMED,

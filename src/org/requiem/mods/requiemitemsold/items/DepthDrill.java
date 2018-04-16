@@ -13,7 +13,7 @@ public class DepthDrill implements ItemTypes, MiscConstants {
 	public static int templateId;
 	private String name = "depth drill";
 	public void createTemplate() throws IOException{
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("wyvern.depthdrill");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.depthdrill");
 		itemBuilder.name(name, "depth drills", "A tool for determining dirt depth.");
 		itemBuilder.itemTypes(new short[]{
 				ItemTypes.ITEM_TYPE_NAMED,

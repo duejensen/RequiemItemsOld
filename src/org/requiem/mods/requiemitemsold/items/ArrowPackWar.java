@@ -14,7 +14,7 @@ public class ArrowPackWar {
 	
 	public void createTemplate() throws IOException{
 		String name = "war arrow pack";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.arrowpack.war");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.arrowpack.war");
 		itemBuilder.name(name, "war arrow packs", "A pack of arrows, able to be unpacked into a full quiver.");
 		itemBuilder.descriptions("excellent", "good", "ok", "poor");
 		itemBuilder.itemTypes(new short[]{ // {108, 146, 44, 21, 147, 113} - War Arrow

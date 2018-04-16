@@ -13,7 +13,7 @@ public class CorpseDecoration implements ItemTypes, MiscConstants {
 	public static int templateId;
 	private String name = "human corpse";
 	public void createTemplate() throws IOException{
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.corpse");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.corpse");
 		itemBuilder.name(name, "human corpses", "A human corpse.");
 		itemBuilder.itemTypes(new short[]{ // {108, 21, 135, 86, 31, 51, 52, 157, 44, 92, 176} - Table
 				ItemTypes.ITEM_TYPE_NAMED,

@@ -5,10 +5,9 @@ import com.wurmonline.server.items.NoSuchTemplateException;
 import org.gotti.wurmunlimited.modloader.classhooks.HookException;
 import org.gotti.wurmunlimited.modloader.interfaces.*;
 import org.gotti.wurmunlimited.modsupport.actions.ModActions;
-import org.requiem.mods.requiemitemsold.items.SpecialItems;
+import org.requiem.mods.requiemitemsold.items.HolyBook;
 import org.requiem.mods.requiemitemsold.items.actions.ReceiveMailAction;
 import org.requiem.mods.requiemitemsold.items.actions.UnequipAllAction;
-import org.requiem.mods.requiemitemsold.items.bulk.RequiemCreationEntries;
 import org.requiem.mods.requiemitemsold.mastercraft.Mastercraft;
 
 import java.io.File;
@@ -61,7 +60,7 @@ public class Initiator implements WurmServerMod, ServerStartedListener, ItemTemp
     
     public void onServerStarted() {
         try {
-            SpecialItems.initCreationEntry();
+            HolyBook.initCreationEntry();
 
             logger.info("Registering Item Mod creation entries.");
             ItemMod.initCreationEntries();

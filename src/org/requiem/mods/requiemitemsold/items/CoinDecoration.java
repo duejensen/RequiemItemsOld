@@ -13,7 +13,7 @@ public class CoinDecoration implements ItemTypes, MiscConstants {
 	public static int templateId;
 	private String name = "coin pile";
 	public void createTemplate() throws IOException{
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.coin.pile");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.coin.pile");
 		itemBuilder.name(name, "coin piles", "A pile of decorative coins.");
 		itemBuilder.itemTypes(new short[]{ // {108, 21, 135, 86, 31, 51, 52, 157, 44, 92, 176} - Table
 				ItemTypes.ITEM_TYPE_NAMED,

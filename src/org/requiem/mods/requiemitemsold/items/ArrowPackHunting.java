@@ -14,7 +14,7 @@ public class ArrowPackHunting {
 	
 	public void createTemplate() throws IOException{
 		String name = "hunting arrow pack";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.arrowpack.hunting");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.arrowpack.hunting");
 		itemBuilder.name(name, "hunting arrow packs", "A pack of arrows, able to be unpacked into a full quiver.");
 		itemBuilder.descriptions("excellent", "good", "ok", "poor");
 		itemBuilder.itemTypes(new short[]{ // {108, 146, 44, 21, 147, 113} - War Arrow

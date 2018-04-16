@@ -19,7 +19,7 @@ public class WarhammerHead implements ItemTypes, MiscConstants {
 		 * new short[]{44, 22}, 1232, 1, 0, 3024000, 20, 20, 20, -10, MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, 
 		 * "model.weapon.head.large.maul.", 15.0f, 4000, 11, 100, false, -1);
 		 */
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.warhammer.head");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.warhammer.head");
 		itemBuilder.name(name, "warhammer heads", "A warhammer head.");
 		itemBuilder.itemTypes(new short[]{ // new short[]{44, 22} - Large Maul Head
 				ItemTypes.ITEM_TYPE_NAMED,

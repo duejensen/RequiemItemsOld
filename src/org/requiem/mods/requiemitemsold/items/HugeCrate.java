@@ -13,7 +13,7 @@ public class HugeCrate implements ItemTypes, MiscConstants {
 	public static int templateId;
 	public void createTemplate() throws IOException{
 		String name = "huge crate";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.crate.huge");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.crate.huge");
 		itemBuilder.name(name, "huge crates", "A huge crate made from planks, primarily used to transport goods.");
 		itemBuilder.itemTypes(new short[]{ // {108, 135, 167, 21, 51, 52, 44, 1, 92, 145, 176} - large crate
 				ItemTypes.ITEM_TYPE_NAMED,

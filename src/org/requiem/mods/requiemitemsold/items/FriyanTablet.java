@@ -14,7 +14,7 @@ public class FriyanTablet implements ItemTypes, MiscConstants {
 	public static int templateId;
 	public void createTemplate() throws IOException{
 		String name = "Tablet of Friyan";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.tablet.friyan");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.tablet.friyan");
 		itemBuilder.name(name, "tablets of friyan", "Once a great scholar and sorceress, Friyan's faith had reached the zenith. While in this world, she wrote her knowledge in tablets like these. Perhaps you may learn more of the gods from it...");
 		itemBuilder.itemTypes(new short[]{ // {25, 49, 31, 52, 40} Stone of Soulfall {108, 31, 25, 194, 52, 44, 195, 67, 49, 123, 178, 157} // Colossus
 				ItemTypes.ITEM_TYPE_STONE,

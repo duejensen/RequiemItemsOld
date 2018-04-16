@@ -55,7 +55,6 @@ public class ItemMod {
 	public static SkeletonDecoration SKELETON_DECORATION = new SkeletonDecoration();
 	public static Warhammer WARHAMMER = new Warhammer();
 	public static WarhammerHead WARHAMMER_HEAD = new WarhammerHead();
-	
 	// Crystals
 	public static ChaosCrystal CHAOS_CRYSTAL = new ChaosCrystal();
 	public static EnchantersCrystal ENCHANTERS_CRYSTAL = new EnchantersCrystal();
@@ -88,8 +87,8 @@ public class ItemMod {
 		logger.info("createItems()");
 		try{
 			new RequiemItemTemplateCreator();
-			SpecialItems.addHolyBook();
-			SpecialItems.addTownPortal();
+			HolyBook.createTemplate();
+			ScrollOfTownPortal.createTemplate();
 			AFFINITY_ORB.createTemplate();
 			ARROW_PACK_HUNTING.createTemplate();
 			ARROW_PACK_WAR.createTemplate();
@@ -157,6 +156,7 @@ public class ItemMod {
 	public static void initCreationEntries(){
 		logger.info("initCreationEntries()");
 		new RequiemCreationEntries();
+		HolyBook.initCreationEntry();
 		ARROW_PACK_HUNTING.initCreationEntry();
 		ARROW_PACK_WAR.initCreationEntry();
 		CLUB.initCreationEntry();

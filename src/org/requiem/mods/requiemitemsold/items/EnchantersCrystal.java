@@ -21,7 +21,7 @@ public class EnchantersCrystal implements ItemTypes, MiscConstants {
 		 * "model.valrei.", 300.0f, 100, 21, 1, false);
 		 */
 		String name = "enchanters crystal";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.crystal.enchanters");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.crystal.enchanters");
 		itemBuilder.name(name, "enchanters crystals", "This crystal can manipulate the magical properties of an item.");
 		itemBuilder.descriptions("brilliantly glowing", "strongly glowing", "faintly glowing", "barely glowing");
 		itemBuilder.itemTypes(new short[]{

@@ -16,7 +16,7 @@ public class MassStorageUnit implements ItemTypes {
 
     public void createTemplate() throws IOException{
     	ModVehicleBehaviours.init();
-        ItemTemplateBuilder builder = new ItemTemplateBuilder("mod.item.mass.storage");
+        ItemTemplateBuilder builder = new ItemTemplateBuilder("requiem.mass.storage");
         builder.name(name, "mass storage units", "A massive storage unit able to be loaded with containers.");
         builder.descriptions("almost full", "somewhat occupied", "half-full", "emptyish");
         builder.itemTypes(new short[] { 

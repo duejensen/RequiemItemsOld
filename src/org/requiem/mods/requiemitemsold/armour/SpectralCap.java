@@ -14,7 +14,7 @@ public class SpectralCap implements ItemTypes, MiscConstants {
 	public static int templateId;
 	private String name = "spectral cap";
 	public void createTemplate() throws IOException{
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.spectral.cap");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.spectral.cap");
 		itemBuilder.name(name, "spectral caps", "A spectral cap.");
 		itemBuilder.itemTypes(new short[]{ // {108, 44, 23, 4, 99} - Drake hide jacket
 				ItemTypes.ITEM_TYPE_NAMED,

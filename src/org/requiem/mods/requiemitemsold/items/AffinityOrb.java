@@ -15,7 +15,7 @@ public class AffinityOrb implements ItemTypes, MiscConstants {
 	
 	public void createTemplate() throws IOException{
 		String name = "affinity orb";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("wyvern.affinityorb");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.affinityorb");
 		itemBuilder.name(name, "affinity orbs", "A valuable orb that infuses the user with hidden knowledge.");
 		itemBuilder.descriptions("brilliantly glowing", "strongly glowing", "faintly glowing", "barely glowing");
 		itemBuilder.itemTypes(new short[]{

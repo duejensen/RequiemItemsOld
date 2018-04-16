@@ -20,7 +20,7 @@ public class GlimmerscaleBoot implements ItemTypes, MiscConstants {
 		 * 1060, 1, 0, 29030400, 2, 40, 40, -10, new byte[]{2},
 		 * "model.armour.torso.dragon.", 70.0f, 600, 16, 100000, true, 9);
 		 */
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.glimmerscale.boot");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.glimmerscale.boot");
 		itemBuilder.name(name, "glimmerscale boots", "A glimmerscale boot.");
 		itemBuilder.itemTypes(new short[]{ // {108, 44, 23, 4, 99} - Drake hide jacket
 				ItemTypes.ITEM_TYPE_NAMED,

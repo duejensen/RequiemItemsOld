@@ -22,7 +22,7 @@ public class VindictivesVengeance implements ItemTypes, MiscConstants {
 		 * 1339, 35, 80, Long.MAX_VALUE, 5, 10, 80, 10070, MiscConstants.EMPTY_BYTE_PRIMITIVE_ARRAY, 
 		 * "model.artifact.hammerhuge.", 99.0f, 7000, 31, 3000000, false);
 		 */
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.titan.vindictive.vengeance");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.titan.vindictive.vengeance");
 		itemBuilder.name(name, "Vindictive Vengeances", "A sickle as light as a feather, capable of swinging as swiftly as the user can wield it.");
 		itemBuilder.itemTypes(new short[]{ // new short[]{108, 44, 147, 22, 37, 14, 189} - Large Maul
 				ItemTypes.ITEM_TYPE_NAMED,

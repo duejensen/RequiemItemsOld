@@ -14,7 +14,7 @@ public class EnchantOrb implements ItemTypes, MiscConstants {
 	
 	public void createTemplate() throws IOException{
 		String name = "enchant orb";
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("wyvern.enchantorb");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.enchantorb");
 		itemBuilder.name(name, "enchant orbs", "It shimmers lightly, the magic inside waiting for a proper vessel.");
 		itemBuilder.descriptions("vibrant", "glowing", "faint", "empty");
 		itemBuilder.itemTypes(new short[]{

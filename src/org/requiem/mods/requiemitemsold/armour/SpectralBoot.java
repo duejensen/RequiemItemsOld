@@ -14,7 +14,7 @@ public class SpectralBoot implements ItemTypes, MiscConstants {
 	public static int templateId;
 	private String name = "spectral boot";
 	public void createTemplate() throws IOException{
-		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("mod.item.spectral.boot");
+		ItemTemplateBuilder itemBuilder = new ItemTemplateBuilder("requiem.spectral.boot");
 		itemBuilder.name(name, "spectral boots", "A spectral boot.");
 		itemBuilder.itemTypes(new short[]{ // {108, 44, 23, 4, 99} - Drake hide jacket
 				ItemTypes.ITEM_TYPE_NAMED,
