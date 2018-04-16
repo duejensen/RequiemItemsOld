@@ -1,6 +1,4 @@
 
 /out/
 *.class
-*.class
-*.class
-*.class
+*.jar
