@@ -15,6 +15,8 @@ import org.gotti.wurmunlimited.modsupport.actions.ModActions;
 import org.requiem.mods.requiemitemsold.armour.*;
 import org.requiem.mods.requiemitemsold.items.*;
 import org.requiem.mods.requiemitemsold.items.actions.*;
+import org.requiem.mods.requiemitemsold.items.bulk.RequiemCreationEntries;
+import org.requiem.mods.requiemitemsold.items.bulk.RequiemItemTemplateCreator;
 import org.requiem.mods.requiemitemsold.weapons.Club;
 import org.requiem.mods.requiemitemsold.weapons.Eviscerator;
 import org.requiem.mods.requiemitemsold.weapons.Knuckles;
@@ -85,6 +87,9 @@ public class ItemMod {
 	public static void createItems(){
 		logger.info("createItems()");
 		try{
+			new RequiemItemTemplateCreator();
+			SpecialItems.addHolyBook();
+			SpecialItems.addTownPortal();
 			AFFINITY_ORB.createTemplate();
 			ARROW_PACK_HUNTING.createTemplate();
 			ARROW_PACK_WAR.createTemplate();
@@ -145,10 +150,13 @@ public class ItemMod {
 		ModActions.registerAction(new EnchantersCrystalInfuseAction());
 		ModActions.registerAction(new EnchantOrbAction());
 		ModActions.registerAction(new FriyanTabletAction());
+		ModActions.registerAction(new HolyBookPrayAction());
+		ModActions.registerAction(new TownScrollAction());
 	}
 	
 	public static void initCreationEntries(){
 		logger.info("initCreationEntries()");
+		new RequiemCreationEntries();
 		ARROW_PACK_HUNTING.initCreationEntry();
 		ARROW_PACK_WAR.initCreationEntry();
 		CLUB.initCreationEntry();

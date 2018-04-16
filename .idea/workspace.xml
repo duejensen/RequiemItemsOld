@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82e26075-7305-4bac-88e2-e7dab02e8b8e" name="Default" comment="Changed all classes decompiled by Procyon back to source code">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Jarrod_Laptop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/spells/EnchantedWell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/Initiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/Initiator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/ItemMod$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/ItemMod$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/ItemMod$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/ItemMod$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/ItemMod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/ItemMod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/configurator/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/configurator/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/items/SpecialItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/items/SpecialItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RequiemItemsOld/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/configurator/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/configurator/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/HolyBookPrayAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/HolyBookPrayAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/TownScrollAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/TownScrollAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,14 +39,98 @@
     <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="RequiemCreationEntries.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="1052" column="163" selection-start-line="1052" selection-start-column="159" selection-end-line="1052" selection-end-column="163" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpecialItems.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\/\/ \n\/\/ Decompiled by Procyon v0\.5\.30\n\/\/ \n</find>
+      <find>4933</find>
+      <find>4934</find>
+      <find>4935</find>
+      <find>4936</find>
+      <find>5000</find>
+      <find>5001</find>
+      <find>5002</find>
+      <find>5004</find>
+      <find>5003</find>
+      <find>5006</find>
+      <find>5007</find>
+      <find>5005</find>
+      <find>5009</find>
+      <find>5010</find>
+      <find>5011</find>
+      <find>5008</find>
+      <find>4851</find>
+      <find>4852</find>
+      <find>4853</find>
+      <find>4854</find>
+      <find>4855</find>
+      <find>4856</find>
+      <find>4857</find>
+      <find>4858</find>
+      <find>4859</find>
+      <find>4860</find>
+      <find>4861</find>
+      <find>4850</find>
+      <find>3657</find>
+      <find>4781</find>
     </findStrings>
     <replaceStrings>
-      <replace />
+      <replace>Constants.tannedBoarHead</replace>
+      <replace>Constants.tannedWolfHead</replace>
+      <replace>Constants.tannedWorgHead</replace>
+      <replace>Constants.tannedblackBearBody</replace>
+      <replace>Constants.groomedBlackBearHead</replace>
+      <replace>Constants.groomedBrownBearHead</replace>
+      <replace>Constants.groomedBisonHead</replace>
+      <replace>Constants.groomedStagHead</replace>
+      <replace>Constants.groomedWildcatHead</replace>
+      <replace>Constants.groomedHellhoundHead</replace>
+      <replace>Constants.groomedLionHead</replace>
+      <replace>Constants.groomedHyenaHead</replace>
+      <replace>Constants.groomedBoarHead</replace>
+      <replace>Constants.groomedWolfHead</replace>
+      <replace>Constants.groomedWorgHead</replace>
+      <replace>Constants.groomedblackBearBody</replace>
+      <replace>Constants.stuffedBlackBearHead</replace>
+      <replace>Constants.stuffedBrownBearHead</replace>
+      <replace>Constants.stuffedBisonHead</replace>
+      <replace>Constants.stuffedStagHead</replace>
+      <replace>Constants.stuffedWildcatHead</replace>
+      <replace>Constants.stuffedHellhoundHead</replace>
+      <replace>Constants.stuffedLionHead</replace>
+      <replace>Constants.stuffedHyenaHead</replace>
+      <replace>Constants.stuffedBoarHead</replace>
+      <replace>Constants.stuffedWolfHead</replace>
+      <replace>Constants.stuffedWorgHead</replace>
+      <replace>Constants.stuffedblackBearBody</replace>
+      <replace>ItemList.shoulderPads15</replace>
+      <replace>Constants.glue</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -34,27 +139,35 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Crystals.java" />
-        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Warhammer.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/Eviscerator.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/TweakApiPerms.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/ClassMap.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/FriyanTablet.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/AffinityOrb.java" />
-        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java" />
-        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ArrowPackUnpackAction.java" />
-        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/AffinityOrbAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DepthDrillAction.java" />
-        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DisintegrationRodAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ChaosCrystalInfuseAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/CrystalCombineAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantersCrystalInfuseAction.java" />
         <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleBoot.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/spells/EnchantedWell.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/TownScrollAction.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/HolyBookPrayAction.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/configurator/Constants.java" />
+        <option value="$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java" />
       </list>
     </option>
   </component>
@@ -72,9 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,16 +215,27 @@
               <item name="RequiemItemsOld" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="requiemitemsold" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RequiemItemsOld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RequiemItemsOld" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="requiemitemsold" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+              <item name="bulk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WyvernModsOlder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RequiemGMChanges" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -201,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523825463788</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added .gitignore file">
+      <created>1523825900275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523825900275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -209,11 +337,11 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32965517" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32965517" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -221,7 +349,6 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -234,6 +361,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -242,7 +370,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Changed all classes decompiled by Procyon back to source code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed all classes decompiled by Procyon back to source code" />
+    <MESSAGE value="Added .gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -251,40 +380,12 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/heads/WarhammerHead.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/weapons/titan/VindictivesVengeance.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DraconusServer-0.6.zip/DraconusServer-0.6/src/com/draconusarcanum/wurm/mods/utils/TweakApiPerms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DraconusServer-0.6.zip/DraconusServer-0.6/src/com/draconusarcanum/wurm/mods/utils/ClassMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="52" selection-start-line="11" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DraconusServer-0.6.zip/DraconusServer-0.6/src/com/draconusarcanum/wurm/mods/utils/TweakApiPerms.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_DraconusServer-0.6.zip/DraconusServer-0.6/src/com/draconusarcanum/wurm/mods/utils/ClassMap.java" />
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/utils/ClassMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -292,23 +393,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/CoinDecoration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SkeletonDecoration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/HugeCrate.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/CorpseDecoration.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/DepthDrill.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -316,44 +402,6 @@
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/EnchantOrb.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/AffinityOrb.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ArrowPackWar.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/MassStorageUnit.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/MassStorageBehaviour.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/EnchantersCrystal.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/DisintegrationRod.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ArrowPackHunting.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/ChaosCrystal.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/FriyanTablet.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16677" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ArrowPackUnpackAction.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -365,9 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/AffinityOrbAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -375,38 +420,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/TreasureBoxAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/TreasureBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/TreasureBoxAction.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/TreasureBox.java" />
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/DepthDrillAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -447,36 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleSleeve.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleBoot.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralBoot.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleHelmet.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleHose.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralSleeve.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleVest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralHose.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/GlimmerscaleGlove.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/armour/SpectralCap.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/mastercraft/Mastercraft.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -498,17 +487,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/server.jar!/com/wurmonline/server/items/ItemTemplateCreator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/ItemMod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/server.jar!/com/wurmonline/server/items/CreationEntryCreator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/spells/EnchantedWell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/Initiator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/server.jar!/com/wurmonline/server/items/ItemList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="1061" column="49" selection-start-line="1061" selection-start-column="45" selection-end-line="1061" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wurmonline/server/questions/TownPortalQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/ReceiveMailAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/TownScrollAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/HolyBookPrayAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/FriyanTabletAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/actions/EnchantOrbAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/server.jar!/com/wurmonline/server/behaviours/ActionEntry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-607">
+          <caret line="248" column="34" selection-start-line="248" selection-start-column="25" selection-end-line="248" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemItemTemplateCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="308" column="64" selection-start-line="308" selection-start-column="64" selection-end-line="308" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/configurator/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="216">
+          <caret line="403" column="58" selection-start-line="403" selection-start-column="54" selection-end-line="403" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/bulk/RequiemCreationEntries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="1052" column="163" selection-start-line="1052" selection-start-column="159" selection-end-line="1052" selection-end-column="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/requiem/mods/requiemitemsold/items/SpecialItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
         </state>
       </provider>
     </entry>

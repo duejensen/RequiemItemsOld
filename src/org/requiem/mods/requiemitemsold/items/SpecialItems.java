@@ -44,7 +44,6 @@ public class SpecialItems {
                     10000,
                     true
             );
-            ModActions.registerAction(new HolyBookPrayAction());
         }
         catch (Throwable e) {
             SpecialItems.logger.log(Level.SEVERE, "Uncaught Exception in onServerStarted", e);
@@ -77,7 +76,6 @@ public class SpecialItems {
                     500000,
                     true
             );
-            ModActions.registerAction(new TownScrollAction());
         }
         catch (Throwable e) {
             SpecialItems.logger.log(Level.SEVERE, "Uncaught Exception in addTownPortal", e);

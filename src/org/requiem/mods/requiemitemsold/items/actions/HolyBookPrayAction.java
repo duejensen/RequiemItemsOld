@@ -36,7 +36,11 @@ public class HolyBookPrayAction implements ModAction, BehaviourProvider, ActionP
     public HolyBookPrayAction() {
         this.actionId = (short)ModActions.getNextActionId();
         this.prayResult = TweakApiPerms.getClassMeth("com.wurmonline.server.behaviours.MethodsReligion", "prayResult", "com.wurmonline.server.creatures.Creature", "float", "com.wurmonline.server.deities.Deity", "int");
-        final int[] types = { 4, 25, 43 };
+        final int[] types = {
+                ActionEntry.ACTION_TYPE_FATIGUE,
+                ActionEntry.ACTION_TYPE_MISSION,
+                ActionEntry.ACTION_TYPE_SHOW_ON_SELECT_BAR
+        };
         ModActions.registerAction(this.actionEntry = ActionEntry.createEntry(this.actionId, "Pray", "Praying", types));
     }
     
