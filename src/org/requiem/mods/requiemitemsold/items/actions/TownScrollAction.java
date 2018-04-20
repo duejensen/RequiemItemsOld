@@ -25,7 +25,7 @@ public class TownScrollAction implements ModAction, BehaviourProvider, ActionPer
     public TownScrollAction() {
         this.actionId = (short)ModActions.getNextActionId();
         final int[] types = {
-                ActionEntry.ACTION_TYPE_NOMOVE
+             
         };
         ModActions.registerAction(this.actionEntry = ActionEntry.createEntry(this.actionId, "Use Scroll", "teleporting", types));
     }
